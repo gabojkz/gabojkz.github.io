@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Gabriel Zapata</title>
+		<link>https://gabojkz.github.io/</link>
+		<description>Recent content on gabojkz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Site powered by Hugo.io</copyright>
+		<lastBuildDate>Sat, 20 Feb 2021 15:29:17 +0100</lastBuildDate>
+		
+		<atom:link href="https://gabojkz.github.io/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>When to use the &lt;else keyword&gt;?</title>
+			<link>https://gabojkz.github.io/archive/when-to-use-else/</link>
+			<pubDate>Sat, 20 Feb 2021 15:29:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/archive/when-to-use-else/</guid>
+			<description>
+			
+				Is the return keyword going to replace the else keyword?
+			
+			</description>
+		</item>
+		<item>
+			<title>Perl fetch dinamic hash values</title>
+			<link>https://gabojkz.github.io/archive/perl-fetch-dinamic-hash-values/</link>
+			<pubDate>Sun, 14 Feb 2021 19:37:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/archive/perl-fetch-dinamic-hash-values/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>How to publish a Hugo site in Github</title>
+			<link>https://gabojkz.github.io/archive/how-to-publish-a-hugo-site-in-github/</link>
+			<pubDate>Sun, 28 Apr 2019 15:37:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/archive/how-to-publish-a-hugo-site-in-github/</guid>
+			<description>
+			
+				Tutorial on how to start a blog using hugo.io
+			
+			</description>
+		</item>
+		<item>
+			<title>About me</title>
+			<link>https://gabojkz.github.io/about/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>https://gabojkz.github.io/about/</guid>
+			<description>
+			
+				I am a professional software developer with experience in programming languages like Ruby, Perl and Javascript
+			
+			</description>
+		</item>
+		
+	</channel>
+</rss>

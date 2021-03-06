@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	
+	<meta name="generator" content="Hugo 0.79.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta property="og:title" content="When to use the &lt;else keyword&gt;?">
+	
+	
+	<meta name="author" content="Gabriel"><meta name="keywords" content="javascript,ruby,return statement,good-practices,early-return,dev-tips"><meta name="description" content="Is the return keyword going to replace the else keyword?"><meta property="og:title" content="When to use the &lt;else keyword&gt;?" />
+<meta property="og:description" content="Is the return keyword going to replace the else keyword?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gabojkz.github.io/archive/when-to-use-else/" />
+<meta property="article:published_time" content="2021-02-20T15:29:17+01:00" />
+<meta property="article:modified_time" content="2021-02-20T15:29:17+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="When to use the &lt;else keyword&gt;?"/>
+<meta name="twitter:description" content="Is the return keyword going to replace the else keyword?"/>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="/js/index.js"></script><link rel="stylesheet" type="text/css" media="screen" href="/css/custom.css" /><title>When to use the &lt;else keyword&gt;? | Gabriel Zapata</title>
+
+
+</head>
+<body><header>
+	
+	<div id="avatar">
+		<a href="https://gabojkz.github.io/">
+		  <img src="/img/profile.jpeg" alt="Gabriel Zapata">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://gabojkz.github.io/">Gabriel Zapata</a></h2></div>
+	<div id="title-description"><p id="subtitle">Coding, experiments and something else.</p><div id="social">
+			<nav>
+				<ul>
+					<li><a href="https://github.com/gabojkz"><i title="Github" class="icons fab fa-github"></i></a></li>
+					<li><a href="https://stackoverflow.com/users/10952466/gabriel-komander-zapata"><i title="Stackoverflow" class="icons fab fa-stack-overflow"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/gabojkz/"><i title="Linkedin" class="icons fab fa-linkedin-in"></i></a></li>
+					<li><a href="https://www.instagram.com/gabojkz/"><i title="Instagram" class="icons fab fa-instagram"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/categories">Categories</a></li>
+				
+				<li><a href="/about">About me</a></li>
+				
+				<li><a href="https://dochub.com/gabrieljkz/eOLPG9YKj28BkeWKZpXz6y/gabriel-zapata-software-engineer-pdf?dt=BPkbdyzFyDxJCR9WUqfZ">Resume</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+</header>
+<main><div class="post">
+	
+	<div class="author">
+	
+	
+		<p>
+		
+		Written by Gabriel
+		
+		</p>
+	
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">20</span>
+				<span class="rest">Feb 2021</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">When to use the &lt;else keyword&gt;?</h1>
+      
+      <span style="color:gray; font-size: 14px;">
+        7 min read
+      </span>
+      
+
+      
+      <span style="padding-left: 6px; color:gray; font-size: 14px;">
+        London, UK
+      </span>
+      
+		</div>
+	</div>
+	<div class="markdown">
+		<blockquote>
+<p>NOTE: code written in here is just to try the scenario don&rsquo;t take it too seriously,
+examples are in javascript</p>
+</blockquote>
+<p>So there is this concept of early returns, which saids something like using the else keyword is not a good thing and that you should stop doing so, my doubt is then will the <code>return</code> replace the <code>else</code> keyword?</p>
+<p>Here is an example:</p>
+<div class="highlight"><div style=";-moz-tab-size:2;-o-tab-size:2;tab-size:2">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style=";-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style=";-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="color:#408080;font-style:italic">/**
+</span><span style="color:#408080;font-style:italic"> * If/Else version
+</span><span style="color:#408080;font-style:italic"> * No the best option but still does the job
+</span><span style="color:#408080;font-style:italic"> */</span>
+<span style="color:#008000;font-weight:bold">function</span> save(data) {
+  <span style="color:#008000;font-weight:bold">if</span> (data) {
+    <span style="color:#008000;font-weight:bold">const</span> saved <span style="color:#666">=</span> saveFile(<span style="color:#ba2121">&#39;logger&#39;</span>, data);
+    <span style="color:#008000;font-weight:bold">return</span> saved <span style="color:#666">?</span> <span style="color:#ba2121">&#34;data saved&#34;</span> <span style="color:#666">:</span> <span style="color:#ba2121">&#34;cannot be save&#34;</span>;
+  } <span style="color:#008000;font-weight:bold">else</span> {
+    <span style="color:#008000;font-weight:bold">return</span> <span style="color:#ba2121">&#34;No data provided&#34;</span>;
+  }
+}
+
+<span style="color:#408080;font-style:italic">/**
+</span><span style="color:#408080;font-style:italic"> * Return early version
+</span><span style="color:#408080;font-style:italic"> * Pros:
+</span><span style="color:#408080;font-style:italic"> * - easy to read 
+</span><span style="color:#408080;font-style:italic"> * - easy to change
+</span><span style="color:#408080;font-style:italic"> */</span>
+<span style="color:#008000;font-weight:bold">function</span> save(data) {
+  <span style="color:#008000;font-weight:bold">if</span> (<span style="color:#666">!</span>data) <span style="color:#008000;font-weight:bold">return</span> <span style="color:#ba2121">&#34;No data provided&#34;</span>;
+
+  <span style="color:#008000;font-weight:bold">const</span> saved <span style="color:#666">=</span> saveFile(<span style="color:#ba2121">&#39;logger&#39;</span>, data);
+
+  <span style="color:#008000;font-weight:bold">return</span> saved <span style="color:#666">?</span> <span style="color:#ba2121">&#34;data saved&#34;</span> <span style="color:#666">:</span> <span style="color:#ba2121">&#34;cannot be save&#34;</span>;
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>The early return version is easier, as you can see this can be expanded to
+return early as many different values as you want without the usage of
+<code>if/else if/else</code>, so what benefits can we take from this keywords if they are
+not needed.</p>
+<h3 id="when-to-use-the-ifelse-keyword">When to use the if/else keyword?</h3>
+<p>My personal opinion is that it depends of the scenario but they are flow control mechanisms,they take care of routing the program, if you have a program that mainly operates in 2 different ways like for instance turning a light bulb ON or OFF, it will make sense to me even from a semantic perspective to use if/else however is worth mentioning that this scenarios are not common.</p>
+<figure>
+  <img src="/defimg/If-Then-Else-diagram.svg" width="300px"/>
+  <figcaption>IF/Else controls</figcaption>
+</figure>
+<p>Another example of using if else could be fizzbuzz</p>
+<div class="highlight"><div style=";-moz-tab-size:2;-o-tab-size:2;tab-size:2">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style=";-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style=";-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="color:#008000;font-weight:bold">function</span> fizzbuzz(num) {
+  <span style="color:#008000;font-weight:bold">if</span> (num <span style="color:#666">%</span> <span style="color:#666">15</span> <span style="color:#666">==</span> <span style="color:#666">0</span>) {
+    <span style="color:#008000;font-weight:bold">return</span> <span style="color:#ba2121">&#34;FizzBuzz&#34;</span>;
+  } 
+  elsif (num <span style="color:#666">%</span> <span style="color:#666">3</span>  <span style="color:#666">==</span> <span style="color:#666">0</span>) {
+    <span style="color:#008000;font-weight:bold">return</span> <span style="color:#ba2121">&#34;Fizz&#34;</span>;
+  }
+  elsif (num <span style="color:#666">%</span> <span style="color:#666">5</span>  <span style="color:#666">==</span> <span style="color:#666">0</span>) {
+    <span style="color:#008000;font-weight:bold">return</span> <span style="color:#ba2121">&#34;Buzz&#34;</span>;
+  }
+  <span style="color:#008000;font-weight:bold">else</span> {
+    <span style="color:#008000;font-weight:bold">return</span> num;
+  }
+}
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>IMPORTANT: Never use multiple nested if/else statements <a href="https://www.reddit.com/r/programminghorror/comments/bbxnol/ifelse_hell/" target="_blank">here the consequence</a></p>
+</blockquote>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Categories</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			<a href="/categories/clean-code/"> clean-code </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/categories/dev-tips/"> dev-tips </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			<a href="/tags/dev-tips/"> dev-tips </a>
+			
+			
+			
+			
+			
+			<a href="/tags/early-return/"> early-return </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/good-practices/"> good-practices </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/javascript/"> javascript </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/return-statement/"> return-statement </a>
+			
+			
+			
+			
+			
+			<a href="/tags/ruby/"> ruby </a>
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+		
+	</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function() {
+	    
+	    
+	    if (window.location.hostname === "localhost")
+	        return;
+	    if (window.location.pathname === "/about/")
+	    	return;
+	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	    var disqus_shortname = 'gabrielgit';
+	    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to load the comments.</noscript>
+
+
+</div>
+
+  </main>
+<footer>
+	 © Copyright notice | Site powered by <a href="https://gohugo.io">Hugo.io</a> 
+	
+	
+	
+</footer>
+
+
+</body>
+</html>

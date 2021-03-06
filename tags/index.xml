@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Gabriel Zapata</title>
+		<link>https://gabojkz.github.io/tags/</link>
+		<description>Recent content in Tags on gabojkz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Site powered by Hugo.io</copyright>
+		<lastBuildDate>Sat, 20 Feb 2021 15:29:17 +0100</lastBuildDate>
+		
+		<atom:link href="https://gabojkz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>dev-tips</title>
+			<link>https://gabojkz.github.io/tags/dev-tips/</link>
+			<pubDate>Sat, 20 Feb 2021 15:29:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/dev-tips/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>early-return</title>
+			<link>https://gabojkz.github.io/tags/early-return/</link>
+			<pubDate>Sat, 20 Feb 2021 15:29:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/early-return/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>good-practices</title>
+			<link>https://gabojkz.github.io/tags/good-practices/</link>
+			<pubDate>Sat, 20 Feb 2021 15:29:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/good-practices/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>javascript</title>
+			<link>https://gabojkz.github.io/tags/javascript/</link>
+			<pubDate>Sat, 20 Feb 2021 15:29:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/javascript/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>return statement</title>
+			<link>https://gabojkz.github.io/tags/return-statement/</link>
+			<pubDate>Sat, 20 Feb 2021 15:29:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/return-statement/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>ruby</title>
+			<link>https://gabojkz.github.io/tags/ruby/</link>
+			<pubDate>Sat, 20 Feb 2021 15:29:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/ruby/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>hashes</title>
+			<link>https://gabojkz.github.io/tags/hashes/</link>
+			<pubDate>Sun, 14 Feb 2021 19:37:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/hashes/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>lang-perl</title>
+			<link>https://gabojkz.github.io/tags/lang-perl/</link>
+			<pubDate>Sun, 14 Feb 2021 19:37:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/lang-perl/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>loops</title>
+			<link>https://gabojkz.github.io/tags/loops/</link>
+			<pubDate>Sun, 14 Feb 2021 19:37:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/loops/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>github</title>
+			<link>https://gabojkz.github.io/tags/github/</link>
+			<pubDate>Sun, 28 Apr 2019 15:37:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/github/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>hugo.io</title>
+			<link>https://gabojkz.github.io/tags/hugo.io/</link>
+			<pubDate>Sun, 28 Apr 2019 15:37:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/hugo.io/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>themes</title>
+			<link>https://gabojkz.github.io/tags/themes/</link>
+			<pubDate>Sun, 28 Apr 2019 15:37:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/tags/themes/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		
+	</channel>
+</rss>

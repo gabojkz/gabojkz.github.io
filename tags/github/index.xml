@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>github on Gabriel Zapata</title>
+		<link>https://gabojkz.github.io/tags/github/</link>
+		<description>Recent content in github on gabojkz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Site powered by Hugo.io</copyright>
+		<lastBuildDate>Sun, 28 Apr 2019 15:37:17 +0100</lastBuildDate>
+		
+		<atom:link href="https://gabojkz.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>How to publish a Hugo site in Github</title>
+			<link>https://gabojkz.github.io/archive/how-to-publish-a-hugo-site-in-github/</link>
+			<pubDate>Sun, 28 Apr 2019 15:37:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/archive/how-to-publish-a-hugo-site-in-github/</guid>
+			<description>
+			
+				Tutorial on how to start a blog using hugo.io
+			
+			</description>
+		</item>
+		
+	</channel>
+</rss>

@@ -1,0 +1,39 @@
+* {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+  max-width: 630px;
+  letter-spacing: 0.4px;
+  Font-Family: 'Roboto Slab', Serif;
+  font-size: 19px;
+}
+
+.highlight {
+  margin: 10px;
+}
+
+.highlight pre {
+  padding: 0;
+}
+
+.highlight::before {
+  content: "CODE";
+  position: relative;
+  width: 100%;
+  background: #eee;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+/*
+ * No-click allow to select line numbers
+ * to prevent copying line numbers in markup code examples
+ */
+table > tbody > tr > td:nth-child(1) > pre {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}

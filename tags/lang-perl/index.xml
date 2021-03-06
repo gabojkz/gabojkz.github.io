@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>lang-perl on Gabriel Zapata</title>
+		<link>https://gabojkz.github.io/tags/lang-perl/</link>
+		<description>Recent content in lang-perl on gabojkz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Site powered by Hugo.io</copyright>
+		<lastBuildDate>Sun, 14 Feb 2021 19:37:17 +0100</lastBuildDate>
+		
+		<atom:link href="https://gabojkz.github.io/tags/lang-perl/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Perl fetch dinamic hash values</title>
+			<link>https://gabojkz.github.io/archive/perl-fetch-dinamic-hash-values/</link>
+			<pubDate>Sun, 14 Feb 2021 19:37:17 +0100</pubDate>
+			
+			<guid>https://gabojkz.github.io/archive/perl-fetch-dinamic-hash-values/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		
+	</channel>
+</rss>
